@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
+@import './tokens.css';
+@import './buttons.css';
+@import './sidebar.css';
+@import './main.css';
+@import './header.css';
+html * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--color-dark-bg-2);
+  color: var(--color-text);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header header'
+    'sidebar main';
+  height: 100dvh;
+  margin: 0;
+}
+
+#header-container {
+  grid-area: header;
+  padding: var(--size-header-padding) var(--size-header-padding)
+    calc(var(--size-header-padding) / 2) var(--size-header-padding);
+}
+
+#sidebar-container {
+  grid-area: sidebar;
+  padding: calc(
+      var(--size-sidebar-padding) - calc(var(--size-header-padding) / 2)
+    )
+    var(--size-sidebar-padding) var(--size-sidebar-padding);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#main-container {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: var(--size-main-padding) var(--size-main-padding)
+    var(--size-main-padding)
+    calc(var(--size-main-padding) - var(--size-sidebar-padding));
+}
+
+.material-symbols-rounded::before {
+  content: attr(data-icon);
+}

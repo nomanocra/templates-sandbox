@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SideBar Vanilla</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="header-container">
+      <header id="header">
+        <div class="logo">
+          <img src="logo/logo.svg" alt="SideBar Vanilla" />
+          <p>Sidebar Vanilla</p>
+        </div>
+      </header>
+    </div>
+    <div id="sidebar-container">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h4 class="label">Menu</h4>
+          <button
+            id="sidebar-toggle"
+            class="icon-button"
+            onclick="toggleSidebar(this)"
+          >
+            <div
+              class="material-symbols-rounded"
+              data-icon="arrow_menu_close"
+            ></div>
+          </button>
+        </div>
+        <ul>
+          <li>
+            <a href="#home" class="active">
+              <div class="material-symbols-rounded" data-icon="home"></div>
+              <span class="label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <div class="material-symbols-rounded" data-icon="dashboard"></div>
+              <span class="label">Dashbaord</span>
+            </a>
+          </li>
+          <li>
+            <button class="dropdown-btn" onclick="toggleSubMenu(this)">
+              <div
+                class="material-symbols-rounded"
+                data-icon="create_new_folder"
+              ></div>
+              <span class="label">Create</span>
+              <div
+                class="material-symbols-rounded expand-icon"
+                data-icon="expand_more"
+              ></div>
+            </button>
+            <ul class="sub-menu">
+              <div>
+                <li><a href="#" class="href">Folder</a></li>
+                <li><a href="#" class="href">Document</a></li>
+                <li><a href="#" class="href">Project</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <button class="dropdown-btn" onclick="toggleSubMenu(this)">
+              <div class="material-symbols-rounded" data-icon="checklist"></div>
+              <span class="label">Todo-Lists</span>
+              <div
+                class="material-symbols-rounded expand-icon"
+                data-icon="expand_more"
+              ></div>
+            </button>
+
+            <ul class="sub-menu">
+              <div>
+                <li><a href="#" class="href">Work</a></li>
+                <li><a href="#" class="href">Private</a></li>
+                <li><a href="#" class="href">Coding</a></li>
+                <li><a href="#" class="href">School</a></li>
+                <li><a href="#" class="href">Gardening</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#services">
+              <div
+                class="material-symbols-rounded"
+                data-icon="calendar_month"
+              ></div>
+              <span class="label">Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <div
+                class="material-symbols-rounded"
+                data-icon="account_circle"
+              ></div>
+              <span class="label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main-container">
+      <main id="main">
+        <section class="container">
+          <h2>Home</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </section>
+        <section class="container">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod
+            malesuada. Nullam ac erat ante. Integer nec odio.
+          </p>
+        </section>
+        <section class="container">
+          <h2>Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod
+            malesuada. Nullam ac erat ante. Integer nec odio. Praesent libero.
+            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
+            elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
+            tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu
+            eget nulla.Class aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in
+            libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+            nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed
+            convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.
+            Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+            Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla
+            metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+            Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos.
+          </p>
+        </section>
+        <section class="container">
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod
+            malesuada. Nullam ac erat ante. Integer nec odio.
+          </p>
+        </section>
+        <section class="container">
+          <h2>Clients</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod
+            malesuada. Nullam ac erat ante. Integer nec odio.
+          </p>
+        </section>
+        <div class="footer">
+          <p>&copy; 2025 SideBar Vanilla. All rights reserved.</p>
+          <p>by Nomanocra</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

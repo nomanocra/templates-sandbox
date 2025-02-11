@@ -1,0 +1,23 @@
+#header {
+  background-color: var(--color-dark-bg-3);
+  height: var(--size-header-height);
+  box-sizing: border-box;
+  padding: var(--space-16) var(--space-20);
+  border-radius: var(--radius-background);
+  display: flex;
+  align-items: center;
+  box-shadow: var(--surface-shadow);
+  border: 1px solid var(--color-border);
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+    img {
+      width: var(--space-16);
+    }
+    p {
+      font-size: var(--font-size-l);
+      font-weight: 700;
+    }
+  }
+}

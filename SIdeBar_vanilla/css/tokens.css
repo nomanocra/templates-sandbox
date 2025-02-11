@@ -1,0 +1,116 @@
+/* 
+  This CSS file contains design tokens and typography styles for the application.
+
+  Design Tokens:
+  - Spacing scales (--space-*) from 8px to 64px
+  - Font sizes (--font-size-*) from 10px to 20px 
+  - Border radius values for backgrounds and components
+  - Layout sizes for header and sidebar
+
+  Typography:
+  - Header styles (h1-h5) with consistent font weights and line heights
+  - Base paragraph styles
+*/
+
+:root {
+  /* Colors */
+  --color-primary: rgb(120, 118, 255);
+  --color-primary-hover: rgba(120, 118, 255, 0.1);
+  --color-primary-active: rgba(120, 118, 255, 0.2);
+  --color-dark-bg-1: #18191f;
+  --color-dark-bg-2: #1f202c;
+  --color-dark-bg-3: #252737;
+  --color-dark-bg-4: #2b2e42;
+
+  --color-border: #2b2e42;
+
+  --color-text: #ffffff;
+  --color-text-secondary: #c7bfcf;
+
+  /* Spacing */
+  --space-0: 0px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+
+  /* Shadows */
+  --surface-shadow: 0 0 4px 0 var(--color-dark-bg-2);
+
+  /* Font Sizes */
+  --font-size-2xs: 10px;
+  --font-size-xs: 11px;
+  --font-size-s: 12px;
+  --font-size-m: 14px;
+  --font-size-l: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+
+  /* Border Radius */
+  --radius-background: 8px;
+  --radius-components: 4px;
+
+  /* Layout Sizes */
+  --size-header-height: var(--space-56);
+  --size-header-padding: var(--space-16);
+
+  --size-sidebar-width: 240px;
+  --size-sidebar-closed-width: 58px;
+  --size-sidebar-padding: var(--space-16);
+  --size-sidebar-closed-padding: var(--space-8);
+
+  --size-main-padding: var(--space-56);
+
+  /* Input Sizes */
+  --input-size-2xs: 20px;
+  --input-size-xs: 24px;
+  --input-size-s: 32px;
+  --input-size-m: 40px;
+  --input-size-l: 48px;
+  --input-size-xl: 56px;
+
+  /* Button Sizes */
+  --button-size-xs: 24px;
+  --button-size-s: 32px;
+  --button-size-m: 40px;
+  --button-size-l: 48px;
+  --button-size-xl: 56px;
+}
+
+/* Typography */
+.h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.h5 {
+  font-size: var(--space-8);
+  line-height: 1.2;
+}
+p {
+  margin: 0px;
+  font-size: var(--font-size-m);
+}
