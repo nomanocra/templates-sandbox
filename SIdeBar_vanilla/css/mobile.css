@@ -8,10 +8,6 @@
       'sidebar';
   }
 
-  button:hover {
-    background-color: transparent !important;
-  }
-
   #main-container {
     padding: var(--space-16);
     #main {
