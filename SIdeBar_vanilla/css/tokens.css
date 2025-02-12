@@ -60,12 +60,15 @@
 
   /* Layout Sizes */
   --size-header-height: var(--space-56);
-  --size-header-padding: var(--space-16);
+  --size-header-padding: var(--space-0);
+  --size-header-radius: 0px;
 
+  /* Sidebar Sizes */
   --size-sidebar-width: 240px;
   --size-sidebar-closed-width: 58px;
   --size-sidebar-padding: var(--space-16);
   --size-sidebar-closed-padding: var(--space-8);
+  --size-sidebar-radius: var(--radius-background);
 
   --size-main-padding: var(--space-56);
 
@@ -83,6 +86,8 @@
   --button-size-m: 40px;
   --button-size-l: 48px;
   --button-size-xl: 56px;
+
+  --smartphone-width: 768px;
 }
 
 /* Typography */

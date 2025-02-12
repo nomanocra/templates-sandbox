@@ -8,7 +8,7 @@
   overflow: hidden;
 
   padding: var(--space-16);
-  border-radius: var(--radius-background);
+  border-radius: var(--size-sidebar-radius);
   background-color: var(--color-dark-bg-3);
   box-shadow: var(--surface-shadow);
   border: 1px solid var(--color-border);
@@ -72,12 +72,7 @@
     font-size: var(--font-size-m);
     font-weight: 500;
     color: var(--color-text);
-    &:hover {
-      background-color: var(--color-primary-hover);
-    }
-    &:active {
-      background-color: var(--color-primary-active);
-    }
+
     .material-symbols-rounded {
       font-size: var(--space-20);
       transition: 0.2s ease-in-out;

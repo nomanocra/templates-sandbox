@@ -4,6 +4,7 @@
 @import './sidebar.css';
 @import './main.css';
 @import './header.css';
+
 html * {
   margin: 0;
   padding: 0;
@@ -42,7 +43,10 @@ body {
 #main-container {
   grid-area: main;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: var(--size-main-gap);
   box-sizing: border-box;
   overflow: hidden;
   overflow-y: auto;
@@ -53,4 +57,13 @@ body {
 
 .material-symbols-rounded::before {
   content: attr(data-icon);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-48);
 }

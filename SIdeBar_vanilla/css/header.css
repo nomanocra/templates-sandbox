@@ -3,9 +3,10 @@
   height: var(--size-header-height);
   box-sizing: border-box;
   padding: var(--space-16) var(--space-20);
-  border-radius: var(--radius-background);
+  border-radius: var(--size-header-radius);
   display: flex;
   align-items: center;
+  z-index: 10;
   box-shadow: var(--surface-shadow);
   border: 1px solid var(--color-border);
   .logo {
