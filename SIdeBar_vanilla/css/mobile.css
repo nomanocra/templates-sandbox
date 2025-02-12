@@ -21,7 +21,8 @@
   #sidebar-container {
     padding: var(--space-8);
   }
-  #sidebar {
+  #sidebar,
+  #sidebar.close {
     height: auto;
     width: 100%;
     flex-direction: row;
