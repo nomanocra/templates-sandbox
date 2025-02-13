@@ -1,0 +1,23 @@
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: var(--radius-components);
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button::active {
+  background-color: var(--color-primary-active);
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  height: var(--button-size-m);
+  width: var(--button-size-m);
+}
